@@ -11,14 +11,21 @@ import Behaviors.Squeak;
  *
  * @author Estudiantes
  */
-public class DecoyDuck extends Duck{
-    public DecoyDuck() {
-        flyBehavior = new FlyNoWay();    
-        quackBehavior = new Squeak();         
-    }
-    
-    @Override
-    public void display() {
-        System.out.println("I'm a Decoy duck");
+public class TestDucks {
+    public static void main(String[] args) {
+        Duck mallard = new MallardDuck();
+        System.out.println("MallardDuck:");
+        mallard.performQuack();
+        mallard.performFly();
+
+        Duck rubberDuck = new RubberDuck();
+        System.out.println("\nRubberDuck:");
+        rubberDuck.performQuack();
+        rubberDuck.performFly();
+
+        Duck decoyDuck = new DecoyDuck();
+        System.out.println("\nDecoyDuck:");
+        decoyDuck.performQuack();
+        decoyDuck.performFly();
     }
 }
