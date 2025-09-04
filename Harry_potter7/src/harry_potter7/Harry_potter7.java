@@ -22,9 +22,9 @@ public class Harry_potter7 {
      */
  public static void main(String[] args) {
         // Crear personajes con hechizos por defecto
-        Hermione hermione = new Hermione(); // WingardiumLeviosa
-        Ron ron = new Ron(); // OculusReparo o el que asignaste
-        Harry harry = new Harry(); // Expecto Patronum o el que asignaste
+        Hermione hermione = new Hermione(); 
+        Ron ron = new Ron(); 
+        Harry harry = new Harry(); 
 
         // Lanzar hechizos iniciales
         System.out.println(hermione.getNombre() + " lanza:");
@@ -51,3 +51,4 @@ public class Harry_potter7 {
     }
     
 }
+
