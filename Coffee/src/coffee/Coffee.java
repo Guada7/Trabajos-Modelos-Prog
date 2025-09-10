@@ -4,6 +4,9 @@
  */
 package coffee;
 
+import observer.Barista;
+import subject.CooperativaCafes;
+
 /**
  *
  * @author Estudiantes
@@ -14,7 +17,10 @@ public class Coffee {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        CooperativaCafes coop = new CooperativaCafes();
+        
+        Barista Juan = new Barista();
     }
     
 }
